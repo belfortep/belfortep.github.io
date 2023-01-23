@@ -1,0 +1,107 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #202020;
+  color: #ccc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+  transition: transform 0.5s;
+  width: 240px;
+  height: 240px;
+  border: 2px solid #212529;
+  border-radius: 10px;
+}
+
+img:hover{
+    transform: scale(1.05);
+}
+
+.timeline {
+  border-right: 2px solid #ccc;
+  padding: 1rem 0;
+}
+
+.input-type {
+  background-color: inherit;
+  border: none;
+  border-bottom: 2px solid #198754;
+  color: #ccc;
+}
+
+.input-type:focus {
+  background-color: inherit;
+  color: #ccc;
+  border: none;
+  border-bottom: 2px solid #198754;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  /*necesario para que al autocompletar no cambie el fondo a blanco*/
+  -webkit-box-shadow: 0 0 0 30px #212529 inset !important;
+  -webkit-text-fill-color: #ccc !important;
+}
+
+.timeline-card {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+
+.timeline-card-experience {
+  margin-right: 1rem;
+  border-bottom: 2px solid #0d6efd;
+  border-top: 2px solid #0d6efd;
+}
+
+.timeline-card-education {
+  margin-right: 1rem;
+  border-bottom: 2px solid #198754;
+  border-top: 2px solid #198754;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.nav-link {
+  padding: 0;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  color: #ccc;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.active .nav-link {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-item + .nav-item {
+  margin-left: 1rem;
+}
+
+.cover-bg {
+  background-image: linear-gradient(to top, #212529, #777);
+  border-radius: 10px 10px 0 0;
+}
+
+@media (max-width: 768px) {
+  
+  .site-title {
+    float: left;
+  }
+  .site-nav {
+    float: right;
+  }
+  .img-container {
+    text-align: center;
+  }
+}
