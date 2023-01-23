@@ -23,15 +23,13 @@ let instituciones = document.getElementsByClassName('instituto')
 let descripcionEstudio = document.getElementsByClassName('descripcion-estudio')
 
 let botonCambiar = document.getElementById('cambiar')
-let formulario = document.getElementById('form')
+
 
 botonCambiar.addEventListener('click', () => {
         cambiarDatos()
 })
 
-formulario.addEventListener('submit', (e) => {
-        alert('Mensaje enviado')
-})
+
 
 
 async function obtenerUsuario() 
