@@ -43,7 +43,7 @@ async function obtenerUsuario()
                 return usuario;
 
         } catch (err) {
-                alert('Error, espere un momento por favor')
+                alert('Error, actualice la pagina porfavor')
                 return null
         }
 }
