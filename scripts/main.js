@@ -139,11 +139,13 @@ async function cambiarDatos()
 {
         let miUsuario = await obtenerUsuario();
 
-        cambiarImagen(miUsuario)
-        cambiarNombre(miUsuario)
-        cambiarSobreMi(miUsuario)
-        cambiarExperiencia(miUsuario)
-        cambiarEstudios(miUsuario)
+        if (miUsuario) {
+                cambiarImagen(miUsuario)
+                cambiarNombre(miUsuario)
+                cambiarSobreMi(miUsuario)
+                cambiarExperiencia(miUsuario)
+                cambiarEstudios(miUsuario)
+        }
 }
 
 cambiarDatos()

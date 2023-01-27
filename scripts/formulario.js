@@ -45,5 +45,4 @@ borrarDatos.addEventListener('click', (e) => {
         localStorage.removeItem('mensaje')
         datosMensaje.style.visibility = 'hidden'
         borrarDatos.style.visibility = 'hidden'
-
 })
